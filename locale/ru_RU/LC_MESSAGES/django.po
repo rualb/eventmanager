@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-08 10:56+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\eventhandler\forms.py:33 .\eventhandler\models.py:55
+msgid "Type"
+msgstr "Тип"
+
+#: .\eventhandler\models.py:32
+msgid "Code"
+msgstr "Код"
+
+#: .\eventhandler\models.py:34
+msgid "Title"
+msgstr "Название"
+
+#: .\eventhandler\models.py:65
+msgid "Date"
+msgstr "Дата"
+
+#: .\eventhandler\models.py:67
+msgid "Due Date"
+msgstr "Дата Исп."
+
+#: .\eventhandler\models.py:70
+msgid "Object Name"
+msgstr "Название Объ."
+
+#: .\eventhandler\models.py:72
+msgid "Task Title"
+msgstr "Название Задания"
+
+#: .\eventhandler\models.py:74
+msgid "Task From"
+msgstr "Задание От"
+
+#: .\eventhandler\models.py:76
+msgid "Task Executor"
+msgstr "Исполнитель"
+
+#: .\eventhandler\models.py:89
+msgid "Status"
+msgstr "Статус"
+
+#: .\eventhandler\models.py:110
+msgid "Event Record"
+msgstr "Запись о Событии"
+
+#: .\eventhandler\models.py:111 .\eventhandler\views.py:226
+#: .\templates\app.html:26
+msgid "Event Records"
+msgstr "Записи о Событиях"
+
+#: .\eventhandler\views.py:222 .\eventhandler\views.py:223
+msgid "Nr"
+msgstr "Nr"
+
+#: .\eventhandler\views.py:222
+msgid "Order Desc"
+msgstr "По Убыванию"
+
+#: .\eventhandler\views.py:223
+msgid "Order Asc"
+msgstr "По Возрастанию"
+
+#: .\eventhandler\views.py:229
+msgid "Event Record: Nr: {id}, Type: {specode}, Title: {textf2}"
+msgstr "Запись о Событии: Nr: {id}, Тип: {specode}, Название: {textf2}"
+
+#: .\templates\app.html:22
+msgid "Home"
+msgstr "Домой"
+
+#: .\templates\app.html:33 .\templates\registration\login.html:21
+msgid "User Name"
+msgstr "Имя Пользователя"
+
+#: .\templates\app.html:34
+msgid "Log Out"
+msgstr "Выйти"
+
+#: .\templates\detail.html:19 .\templates\form.html:23
+msgid "Close"
+msgstr "Закрыть"
+
+#: .\templates\form.html:22
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\templates\model_list.html:7
+msgid "Edit"
+msgstr "Правка"
+
+#: .\templates\model_list.html:8
+msgid "View"
+msgstr "Смотреть"
+
+#: .\templates\model_list.html:9
+msgid "Copy"
+msgstr "Копия"
+
+#: .\templates\model_list.html:10
+msgid "Search"
+msgstr "Поиск"
+
+#: .\templates\model_list.html:11
+msgid "Apply"
+msgstr "Применить"
+
+#: .\templates\model_list.html:12
+msgid "Page Nr"
+msgstr "Номер Стр."
+
+#: .\templates\model_list.html:13
+msgid "Page Count"
+msgstr "Кол. Стр."
+
+#: .\templates\model_list.html:14
+msgid "Records Count"
+msgstr "Кол. Зап."
+
+#: .\templates\model_list.html:28
+msgid "Refresh"
+msgstr "Обновить"
+
+#: .\templates\model_list.html:29
+msgid "Add"
+msgstr "Добавить"
+
+#: .\templates\model_list.html:39 .\templates\model_list.html:45
+msgid "First"
+msgstr "Первый"
+
+#: .\templates\model_list.html:42 .\templates\model_list.html:46
+msgid "Prev"
+msgstr "Назад"
+
+#: .\templates\model_list.html:55 .\templates\model_list.html:61
+msgid "Next"
+msgstr "Вперед"
+
+#: .\templates\model_list.html:58 .\templates\model_list.html:62
+msgid "Last"
+msgstr "Последний"
+
+#: .\templates\registration\login.html:18
+msgid "User name and password didn't match. Please try again."
+msgstr "Имя Пользователя и Пароль не соответствуют"
+
+#: .\templates\registration\login.html:19
+msgid "User and Password"
+msgstr "Пользователь и Пароль"
+
+#: .\templates\registration\login.html:20
+msgid "Log in"
+msgstr "Вход"
+
+#: .\templates\registration\login.html:22
+msgid "User Password"
+msgstr "Пароль"

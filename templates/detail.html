@@ -1,0 +1,28 @@
+{% extends "app.html" %}
+
+{% load i18n %}
+
+{% block page_content %}
+
+<div class="container">
+
+  <div class="mt-2">
+    <table style="">
+      {{ form.as_table }}
+    </table>
+  </div>
+
+  <div class="mt-5 row">
+
+      <div class="col-2 mr-auto">
+        <div class="btn-group  w-100" role="group" aria-label="">
+          <button class="btn btn-outline-info w-100" onclick="window.close()">{% trans "Close" %}</button>
+        </div>
+      </div>
+      
+    </div>
+
+</div>
+
+
+{% endblock %}

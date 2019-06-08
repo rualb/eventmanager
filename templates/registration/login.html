@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+
+
+{% block header %}
+{# empty #}
+{% endblock %}
+
+{% block page_content %}
+
+
+{% get_current_language as LANGUAGE_CODE %}
+<!-- Current language: {{ LANGUAGE_CODE }} -->
+{% get_available_languages as LANGUAGES %}
+
+{% trans "User name and password didn't match. Please try again." as lang_login_err %}
+{% trans "User and Password" as lang_user_password %}
+{% trans "Log in" as lang_login %}
+{% trans "User Name" as lang_user %}
+{% trans "User Password" as lang_pw %}
+
+
+<div class="text-center">
+
+  {% if form.message %}
+  <div class="alert alert-danger" role="alert">
+    {{ form.message }}
+  </div>
+  {% endif %}
+
+  {% if form.errors %}
+  <div class="alert alert-danger" role="alert">{{ lang_login_err }}</div>
+  {% endif %}
+
+
+  <form role="form" class="form-signin" method="post" action="{% url 'login' %}">{% csrf_token %}
+    <h1 class="h3 mb-3 font-weight-normal">{{ lang_user_password }}</h1>
+    <div class="form-group">
+
+      <div class="input-group">
+        <input class="form-control" id="{{ form.username.id_for_label }}" maxlength="30"
+          name="{{ form.username.html_name }}" value="{{ form.username.value|default:'' }}" type="text"
+          placeholder="{{ lang_user }}" />
+
+      </div>
+
+      <div class="input-group">
+        <input class="form-control" id="{{ form.password.id_for_label }}" maxlength="30"
+          name="{{ form.password.html_name }}" value="{{ form.password.value|default:'' }}" type="password"
+          placeholder="{{ lang_pw }}" />
+
+      </div>
+
+
+
+      {% comment %}
+
+
+      <!-- <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" id="id_rememberme" id="rememberme"> Remember me
+        </label>
+      </div>
+      <p><a href="{% url 'password_reset' %}">Lost password?</a></p> -->
+
+      {% endcomment %}
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">{{ lang_login }}</button>
+
+      <div>
+        &nbsp;
+      </div>
+      <select class="form-control form-control-sm col-sm-12" id="lang" name="lang">
+        {% if langs %}
+        {% for key, value in langs %}
+        <option value="{{ key }}" {% if key == lang %}selected{% endif %}>{{ value }}
+        </option>
+        {% endfor %}
+        {% endif %}
+      </select>
+
+
+    </div>
+  </form>
+
+
+
+</div>
+
+{% comment %}
+<div>
+  <form method="post" novalidate>
+    {% csrf_token %}
+    <table>
+      {{ form }}
+    </table>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+{% endcomment %}
+
+<style>
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+
+  .form-signin {
+    width: 60ch;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+
+  .form-signin input[name="username"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .form-signin input[name="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .form-signin select[name="lang"] {
+    font-size: 0.8rem;
+  }
+</style>
+{% endblock %}

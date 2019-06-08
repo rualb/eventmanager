@@ -1,0 +1,25 @@
+
+python -m django startproject taskmanager
+
+open project folder taskmanager
+
+python manage.py startapp hello_world
+python manage.py startapp project
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+
+#GNU gettext tools http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/
+#gettext-runtime-X.zip and gettext-tools-X.zip
+#Extract the contents of the bin\ to H:\home\python\app\bin
+#set PATH=%PATH%;H:\home\python\app\bin;
+
+python  manage.py makemessages -l en_US
+python  manage.py makemessages -l az_AZ
+python  manage.py makemessages -l ru_RU
+python  manage.py compilemessages
+python  manage.py migrate
+
+

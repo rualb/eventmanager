@@ -1,0 +1,35 @@
+{% extends "app.html" %}
+
+{% load i18n %}
+
+{% block page_content %}
+
+<div class="container">
+
+  <form method="post" enctype="multipart/form-data" action="">
+    {% csrf_token %}
+
+    <div class="mt-2">
+      <table style="">
+        {{ form.as_table }}
+      </table>
+    </div>
+
+    <div class="mt-5 row">
+
+      <div class="col-4 mr-auto">
+        <div class="btn-group  w-100" role="group" aria-label="">
+          <input class="btn btn-success   w-50" type="submit" value="{% trans 'Save' %}" />
+          <button class="btn btn-outline-info   w-50" onclick="window.close()">{% trans "Close" %}</button>
+        </div>
+      </div>
+      
+    </div>
+
+
+  </form>
+
+</div>
+
+
+{% endblock %}

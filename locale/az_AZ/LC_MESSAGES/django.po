@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-24 15:24+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\eventhandler\models.py:32
+msgid "Code"
+msgstr "Kod"
+
+#: .\eventhandler\models.py:34
+msgid "Title"
+msgstr "Ad"
+
+#: .\eventhandler\models.py:54
+msgid "Type"
+msgstr "Növ"
+
+#: .\eventhandler\models.py:63
+msgid "Date"
+msgstr "Tarix"
+
+#: .\eventhandler\models.py:65
+msgid "Due Date"
+msgstr "İcranın Son Tarixi"
+
+#: .\eventhandler\models.py:68
+msgid "Object Name"
+msgstr "Obyektin Adı"
+
+#: .\eventhandler\models.py:70
+msgid "Task Title"
+msgstr "Tapşırığın Adı"
+
+#: .\eventhandler\models.py:72
+msgid "Task From"
+msgstr "Tapşırığı Verənin Adı"
+
+#: .\eventhandler\models.py:74
+msgid "Task Executor"
+msgstr "İcraçı"
+
+#: .\eventhandler\models.py:87
+msgid "Status"
+msgstr "İcra"
+
+#: .\eventhandler\models.py:108
+msgid "Event Record"
+msgstr "Hadisə Qeydi"
+
+#: .\eventhandler\models.py:109 .\eventhandler\views.py:226
+#: .\templates\app.html:26
+msgid "Event Records"
+msgstr "Hadisələr Qeydləri"
+
+#: .\eventhandler\views.py:222 .\eventhandler\views.py:223
+msgid "Nr"
+msgstr "Nr"
+
+#: .\eventhandler\views.py:222
+msgid "Order Desc"
+msgstr "Əvvəlcə Son"
+
+#: .\eventhandler\views.py:223
+msgid "Order Asc"
+msgstr "Əvvəlcə İlk"
+
+#: .\eventhandler\views.py:229
+msgid "Event Record: Nr: {id}, Type: {specode}, Title: {textf2}"
+msgstr "Hadisə: Nr {id}, Növ: {specode}, Adı: {textf2}"
+
+#: .\templates\app.html:22
+msgid "Home"
+msgstr "Evə"
+
+#: .\templates\app.html:33 .\templates\registration\login.html:21
+msgid "User Name"
+msgstr "İstifadəci Adı"
+
+#: .\templates\app.html:34
+msgid "Log Out"
+msgstr "Çıxış"
+
+#: .\templates\detail.html:19 .\templates\form.html:23
+msgid "Close"
+msgstr "Bağla"
+
+#: .\templates\form.html:22
+msgid "Save"
+msgstr "Qeyd et"
+
+#: .\templates\model_list.html:7
+msgid "Edit"
+msgstr "Redaktə"
+
+#: .\templates\model_list.html:8
+msgid "View"
+msgstr "Baxış"
+
+#: .\templates\model_list.html:9
+msgid "Copy"
+msgstr "Kopy"
+
+#: .\templates\model_list.html:10
+msgid "Search"
+msgstr "Axtar"
+
+#: .\templates\model_list.html:11
+msgid "Apply"
+msgstr "Tətbiq et"
+
+#: .\templates\model_list.html:12
+msgid "Page Nr"
+msgstr "Səhifə Nr"
+
+#: .\templates\model_list.html:13
+msgid "Page Count"
+msgstr "Səhifə Sayı"
+
+#: .\templates\model_list.html:14
+msgid "Records Count"
+msgstr "Qeyd Sayı"
+
+#: .\templates\model_list.html:28
+msgid "Refresh"
+msgstr "Yenilə"
+
+#: .\templates\model_list.html:29
+msgid "Add"
+msgstr "Əlavə et"
+
+#: .\templates\model_list.html:39 .\templates\model_list.html:45
+msgid "First"
+msgstr "İlk"
+
+#: .\templates\model_list.html:42 .\templates\model_list.html:46
+msgid "Prev"
+msgstr "Əvvəlki"
+
+#: .\templates\model_list.html:55 .\templates\model_list.html:61
+msgid "Next"
+msgstr "Sonrakı"
+
+#: .\templates\model_list.html:58 .\templates\model_list.html:62
+msgid "Last"
+msgstr "Sonuncu"
+
+#: .\templates\registration\login.html:18
+msgid "User name and password didn't match. Please try again."
+msgstr "İstifadəci Adı və Şifrəsi düz deyil."
+
+#: .\templates\registration\login.html:19
+msgid "User and Password"
+msgstr "İstifadəci və Şifrə"
+
+#: .\templates\registration\login.html:20
+msgid "Log in"
+msgstr "Qiriş"
+
+#: .\templates\registration\login.html:22
+msgid "User Password"
+msgstr "İstifadəci Şifrəsi"
